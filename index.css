@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#modal_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(190, 187, 183, 0.486);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#modal_contents {
+    background-color: white;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+#modal_close_wrap {
+    text-align: right;
+}
+#modal_close {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+#modal_title {
+    margin: 0 0 15px 0;
+}
+#modal_img {
+    max-width: 60%;
+    min-width: 60%;
+    max-height: 50%;
+    min-height: 50%;
+    background-color: aliceblue;
+    border: 1px solid;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.modal_p {
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    width: 55%;
+    margin-left: 18%;
+    border-radius: 5px;
+    text-align: left;
+    padding: 2px 20px;
+}
+.modal_input {
+    border: none;
+    outline: none;
+}
+#modal_btn {
+    position: relative;
+    left: 22.5%;
+    padding: 3px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.311);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#file_input {
+    display: none;
+}
+#title {
+    text-align: center;
+}
+#drawer {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+hr {
+    border: 1px solid rgb(170, 152, 152);
+}
+.hr1 {
+    width: 97%;
+}
+.hr2 {
+    width: 90%;
+}
+#menu {
+    position: absolute;
+    overflow: unset;
+    top: 1px;
+    right: -260px;
+    width: 250px;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(252, 223, 223);
+}
+@keyframes ani {
+    from {right: -260px;}
+    to {right: 0px;}
+}
+@keyframes ani2 {
+    from {right: 0px;}
+    to {right: -260px;}
+}
+#menu.active {
+    animation: ani 2s;
+    animation-fill-mode: forwards;
+}
+#menu.inactive {
+    animation: ani2 2s;
+    animation-fill-mode: forwards;
+}
+#menu_close {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 220px;
+    cursor: pointer;
+}
+#menu_plus {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 0 15px 0
+}
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+li {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+section {
+    display: flex;
+    padding: 40px;
+}
+#profile_wrap {
+    background-color: rgb(214, 228, 241);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    text-align: right;
+}
+#profile {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 500px;
+    z-index: 0;
+    border-radius: 10px;
+}
+#profile_setting {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    top: 133px;
+    left: 404px;
+    z-index: 1;
+}
+#info {
+    margin-left: 40px;
+}
+#memo_wrap {
+    display: flex;
+    align-items: center;
+}
+#memo_input {
+    width: 500px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+    border-radius: 3px;
+    outline: none;
+}
+#memo_btn {
+    padding: 0 30px;
+    height: 25px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+    border-radius: 5px;
+    color: rgb(142, 139, 139);
+    cursor: pointer;
+}
+#memo_reset {
+    padding: 0 30px;
+    height: 25px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+    border-radius: 5px;
+    color: rgb(142, 139, 139);
+    cursor: pointer;
+}
+#memo_btn:hover {
+    background-color: rgb(198, 223, 245);
+}
+#memo_reset:hover {
+    background-color: rgb(198, 223, 245);
+}
+#memo1 {
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    width: 750px;
+    height: 290px;
+    padding: 20px;
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+#footer {
+    height: 500px;
+    background-color: rgb(125, 112, 112);
+}
