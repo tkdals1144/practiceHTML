@@ -28,7 +28,7 @@ $menuPlus.addEventListener("click", () => {
         return;
     }
     let prom = prompt("추가할 메뉴의 이름을 입력하세요");
-    if (prom || prom.trim() == "") {
+    if (prom == " ") {
         alert("공백은 입력할 수 없습니다!");
         return;
     }
